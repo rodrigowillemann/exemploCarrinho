@@ -12,24 +12,24 @@
         <br><p>Descrição</p>
         <br><p>Preço: R$</p>
         <p id="p1preco">1,99</p>
-        <input type="text" id="quantidade">
+        <input type="text" id="p1quantidade">
         <br><input type="button" value="Adicionar" onclick="
         addCarrinho(
             document.getElementById('p1nome').textContent, //nome
             document.getElementById('p1preco').textContent, //preco
-            document.getElementById('quantidade').value, //quantidade
+            document.getElementById('p1quantidade').value, //quantidade
             1)"> <!-- quantos elementos foram adiconados -->
     </div>
-    <div><br><h2><p id="p1nome">Outro produto</p></h2>
+    <div><br><h2><p id="p2nome">Outro produto</p></h2>
         <br><p>Descrição</p>
         <br><p>Preço: R$</p>
-        <p id="p1preco">1,99</p>
-        <input type="text" id="quantidade">
+        <p id="p2preco">1,99</p>
+        <input type="text" id="p2quantidade">
         <br><input type="button" value="Adicionar" onclick="
         addCarrinho(
-            document.getElementById('p1nome').textContent, //nome
-            document.getElementById('p1preco').textContent, //preco
-            document.getElementById('quantidade').value, //quantidade
+            document.getElementById('p2nome').textContent, //nome
+            document.getElementById('p2preco').textContent, //preco
+            document.getElementById('p2quantidade').value, //quantidade
             2)"> <!-- quantos elementos foram adiconados -->
     </div>
 </body>

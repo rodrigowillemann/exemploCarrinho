@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><h1>Catálogo de Produtos</h1></div>
+    <div><br><h2><p id="p1nome">Macarrão</p></h2>
+        <br><p>Descrição</p>
+        <br><p>Preço: R$</p>
+        <p id="p1preco">1,99</p>
+        <input type="text" id="quantidade">
+        <br><input type="button" value="Adicionar" onclick="
+        addCarrinho(
+            document.getElementById('p1nome').textContent, //nome
+            document.getElementById('p1preco').textContent, //preco
+            document.getElementById('quantidade').value, //quantidade
+            1)"> <!-- quantos elementos foram adiconados -->
+    </div>
+    <div><br><h2><p id="p1nome">Outro produto</p></h2>
+        <br><p>Descrição</p>
+        <br><p>Preço: R$</p>
+        <p id="p1preco">1,99</p>
+        <input type="text" id="quantidade">
+        <br><input type="button" value="Adicionar" onclick="
+        addCarrinho(
+            document.getElementById('p1nome').textContent, //nome
+            document.getElementById('p1preco').textContent, //preco
+            document.getElementById('quantidade').value, //quantidade
+            2)"> <!-- quantos elementos foram adiconados -->
+    </div>
+</body>
+<script src="compra.js"></script>
+</html>
